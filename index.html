@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie7"><![endif]-->
+<!--[if gt IE 7]><!--><html><!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<title>Amour - макет сайта</title>
+<!--[if gt IE 7]><!--><link rel="stylesheet" href="css/amour.css" /><!--<![endif]-->
+<!--[if lt IE 8]><link rel=stylesheet href="css/amour.ie.css"><![endif]-->
+<!--[if IE 8]>
+	<style>
+		/*эмуляция скруглений углов элемента меню*/
+		.menu .active:before,
+		.menu a:hover:before{
+			left:-15px;
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAA1CAYAAACeN7GBAAABJklEQVR4XuXUIUgEURSF4fNuWBBMm7ZZrGtZi8kgGAWNG4yKwWIStOyi0bZFu2JYsBvEpMUgChaDYLFtFYRB//iQYWfmvvAQGb58ztx7Z+xBPTWwhCM84dtCCKowiz184A4H6EIWNPXp4xUn6EAxg0q0cIpzdKASpcltXGMLmsaorsgMbrEMVbFfXS7RheqIpz3AGlRHPO157EOxuu88QAtqwkjooQ85ksMO5GEkrEPe5LY7GfIyMpRSW07ZkrPWJlpu/tr/cVWZp21yyjbtP3yeFuSTrXbmC7MwSRnYOGVgo5Q9P+MiZc+H+PKu6g3DlPM8xrhRbbIV2cQjVKnktj+xghvvVzXBKkZNascK7GIDL9W1y11hAdt49/wMCpxhDosY4h7FD5a4PJxseQFnAAAAAElFTkSuQmCC");
+		}
+		.menu .active:after,
+		.menu a:hover:after	{
+			right:-15px;
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAA1CAYAAACeN7GBAAABOElEQVR4XuXUMUvDQBjG8UsaBEEQnJz8CC6uBT9AwYI4CQqCIDi5OnXR1cVBEERx6BRwCjgqCAFxEwTXQqAQEJ06HfgfjqK+FN++GW7owW98eN673CV7cWufzrlH3KFADdXKkiRZJLAROBQ4Rfl/2CV/CzpBjiNUE8PjrLSFNjZRKpqFZTzgADcyLLLCHK4xj4vfY4dmhXMMUPxoVodbuMUqKrFnhSWcYE/sWWkHZ3gVzQqt0N4Ve1bqYEU269u3ZbPeembNoi3H1luwjw17Mxo1Rxw7jTX2jH2q+KedRjvtGbyeaYTmqOGPJjesbHJgT9axPfrWcIGBZWyPY+tpX+HNEq7Rs1xPj10Mx2GnDx/iftobNsI++tO+qiG6eJYFk8f2uEQPtfZheOQh9K75GVRhrBwFvqBa355RNKTboyCqAAAAAElFTkSuQmCC");
+		}
+		/*фон для всплывающего окна аутентификации с градиентом, скругленными углами и тенью*/
+		.auth_set {	
+			background:url("data:image/png;base64,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") 0 0 no-repeat;
+		}
+	</style>
+<![endif]-->
+<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+	<div class="body_wrap-in">
+		<div class="page_wrap-out">
+			<header class="head" role="banner">
+				<ul class="lang">
+					<li><a href="#eng">&nbsp;English&nbsp;</a></li>
+					<li>&nbsp;Русский&nbsp;</li>
+					<li><a href="#ukr">&nbsp;Украинська&nbsp;</a></li>
+					<li><a href="#">&nbsp;French&nbsp;</a></li>
+					<li><a href="#">&nbsp;Espanol&nbsp;</a></li>
+					<li><a href="#">&nbsp;Italian&nbsp;</a></li>
+				</ul>
+				<div class="logo">
+					<img src="i/logo.png" usemap="#maplogo" alt="" width="691" height="99">
+					<map name="maplogo">
+						<area shape="poly" coords="110,0,182,0,195,40,354,40,354,99,0,100,0,35,110,0" href="index.html" alt="" onfocus="this.blur()">
+					</map>
+					<hgroup>
+						<h1>
+							<a href="index.html">Amour</a>
+						</h1>
+						<h2>Любовь всегда приходит вовремя</h2>
+					</hgroup>
+				</div>
+				<nav class="menu" role="navigation">
+					<ul>
+						<li><a class="active" href="#interesting"> Интересные факты </a></li>
+						<li><a href="#forms">Анкеты</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#photo">Фото</a></li>
+						<li><a href="#test">Тест</a></li>
+						<li><a href="#help">Помощь</a></li>
+					</ul>
+				</nav>
+				<form action="search.php" method="get" name="search_form">
+					<input type="search" name="search_string" />
+					<input type="submit" value="Поиск" />
+				</form>
+				<form action="auth.php" method="post" name="auth_form" enctype="text/plain">
+					<button type="button" class="auth_start">Вход</button>
+					<fieldset class="auth_set">
+						<p>Введите свои данные:</p>
+						<ul class="auth_list">
+							<li><label for="login">Логин</label> <input type="text" name="auth_login" autocomplete="on" /></li>
+							<li><label for="password">Пароль</label> <input type="password" name="auth_password" autocomplete="off" /></li>
+							<li><button type="submit">Войти</button> <button type="reset">Отказаться</button></li>
+						</ul>
+						<button type="button" class="auth_fine">&times;</button>
+					</fieldset>
+				</form>
+			</header>
+			<div class="clearfix">
+				<div class="main clearfix">
+					<div class="slideshow">
+						<ul class="slideshow_tabs">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+						</ul>
+						<ul class="slideshow_content">
+							<li>
+								<figure>
+									<img src="i/slide_1.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li
+							><li>
+								<figure>
+									<img src="i/slide_2.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет 2 границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li
+							><li>
+								<figure>
+									<img src="i/slide_1.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет 3 границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li
+							><li>
+								<figure>
+									<img src="i/slide_2.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет 4 границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li
+							><li>
+								<figure>
+									<img src="i/slide_1.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет 5 границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами.Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li
+							><li>
+								<figure>
+									<img src="i/slide_2.jpg" width="730" height="342" alt="" />
+									<figcaption>
+										<h2>Для любви нет 6 границ</h2>
+										<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts">
+						<h2>Ищешь половинку?</h2>
+						<dl>
+							<dt>в любое время дня и ночи:</dt>
+							<dd class="tel">050 55-72-894</dd>
+							<dd class="tel">(06543) 12-34-6</dd>
+						</dl>
+						<p>
+							А&nbsp;если не&nbsp;так срочно, то&nbsp;<a href="mailto:tadatuta@amour.ru">пиши</a> или&nbsp;<a href="#">заходи</a>
+						</p>
+					</div>
+				</div>
+				<section class="interest">
+					<h2>Это интересно</h2>
+					<h3><a href="#discount">Осенние и&nbsp;зимние скидки!</a></h3>
+					<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
+					<h3><a href="#sales">Еще больше осенних и зимних скидок!</a></h3>
+					<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
+				</section>
+				<section class="newforms">
+					<h2>Новые анкеты</h2>
+					<ul>
+						<li><a href="#userform_1"> <img src="i/photo1.jpg" alt="photo" /> <span>Иван,</span></a> 24&nbsp;года Киев</li>
+						<li><a href="#userform_2"> <img src="i/photo7.jpg" alt="photo" /> <span>Наталья,</span></a> 20&nbsp;лет Ивано-Франковск</li>
+						<li><a href="#userform_3"> <img src="i/photo1.jpg" alt="photo" /> <span>Пол,</span></a> 32&nbsp;года Нью-Йорк</li>
+						<li><a href="#userform_4"> <img src="i/photo7.jpg" alt="photo" /> <span>Кармен,</span></a> 25&nbsp;лет Милан</li>
+						<li><a href="#userform_6"> <img src="i/photo1.jpg" alt="photo" /> <span> Джеймс,</span></a> 45&nbsp;лет Лондон</li>
+						<li><a href="#userform_5"> <img src="i/photo7.jpg" alt="photo" /> <span>София,</span></a> 56&nbsp;лет Ялта</li>
+					</ul>
+				</section>
+				<section class="ourservices">
+					<h2>Новые услуги</h2>
+					<h3><a href="#dating_service">Знакомства</a></h3>
+					<p>Заполнив анкету в нашем агентстве, вы гарантировано найдете свою любовь. <br /> <a href="#formorder">Отправить заявку</a> на поиск партнера вы можете прямо сейчас!</p>
+					<h3><a href="#photography">Студийная фотосъемка</a></h3>
+					<p>Не секрет что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.</p>
+					<h3><a href="#trainings">Тренинги</a></h3>
+					<p>Что изменить в своем поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и о многом другом на наших психологических тренингах.</p>
+				</section>
+				<section class="newphotos">
+					<h2>Свежие фото</h2>
+					<ul>
+						<li><a href="#"><img src="i/photo1.jpg" alt="photo1" /></a></li>
+						<li><a href="#"><img src="i/photo2.jpg" alt="photo2" /></a></li>
+						<li><a href="#"><img src="i/photo3.jpg" alt="photo3" /></a></li>
+						<li><a href="#"><img src="i/photo4.jpg" alt="photo4" /></a></li>
+						<li><a href="#"><img src="i/photo5.jpg" alt="photo5" /></a></li>
+						<li><a href="#"><img src="i/photo6.jpg" alt="photo6" /></a></li>
+						<li><a href="#"><img src="i/photo7.jpg" alt="photo7" /></a></li>
+						<li><a href="#"><img src="i/photo8.jpg" alt="photo8" /></a></li>
+					</ul>
+				</section>
+			</div>
+			<footer class="foot" role="contentinfo">
+				<div class="column vcard">
+					<div>&copy;2010 <span class="org">Международное <br> брачное агентство «Амур»</span></div>
+					<dl>
+						<dt>телефоны:</dt>
+						<dd class="tel">050&nbsp;55-72-894</dd>
+						<dd class="tel">(06543) 12-34-6</dd>
+					</dl>
+				</div>
+				<ul class="column interactive">
+					<li><a href="#map">Посмотреть на карте</a></li>
+					<li><a href="mailto:tadaduta@amour.ru">Написать письмо</a></li>
+					<li><a href="#partner">Партнёрство</a></li>
+				</ul>
+				<form action="#" name="otherlang" class="column otherlang" method="post">
+					<select name="chooselang">
+						<option selected disabled>Other language?</option>
+						<option value="english">English</option>
+						<option value="russian">Русский</option>
+						<option value="ukraine">Украинська</option>
+						<option value="french">French</option>
+						<option value="spanish">Espanol</option>
+						<option value="italian">Italian</option>
+					</select>
+				</form>
+				<div class="column author">Дизайн <a href="#admin">Тадатута</a></div>
+			</footer>
+		</div>
+	</div>
+	<script src="js/amour.min.js"></script>
+</body>
+</html>

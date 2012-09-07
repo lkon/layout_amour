@@ -1,0 +1,524 @@
+/*
+Content-Type: multipart/related; boundary="zamena"
+
+--zamena
+Content-Location:figcaption
+Content-Type:image/png
+Content-Transfer-Encoding:base64
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP4b5zWAAAF5gIZISxPHAAAAABJRU5ErkJggg==
+
+--zamena
+Content-Location:authset
+Content-Type:image/png
+Content-Transfer-Encoding:base64
+
+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
+
+--zamena--
+*/
+
+/***  RESET begin  *****************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	outline:0;
+	border:0;
+	vertical-align:baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+ul {list-style:none;}
+
+.clearfix { zoom: 1; }
+/***  RESET end  *******************************************************/
+html{
+	width:100%;
+	height:100%;
+	background-color:#ffeaef;
+	background-image:url(../i/bg.png);	
+}
+body{
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	background: url("../i/head.png") 0 0 no-repeat;
+	color:#333;
+	font-style:italic;
+	font-size:62.5%;
+	font-family:Georgia, Serif;
+}
+	.body-before{	/* будет генерироваться скриптом */
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		width:622px;
+		height:350px;
+		background:url(../i/head_back.png) 0 0 no-repeat;
+		content:'\0020';
+	}
+.body_wrap-in{
+	position:relative;
+	min-width: 1000px;
+	min-height:100%;
+	background:url(../i/foot.png) 100% 100% no-repeat;
+}
+	.body_wrapin-before{		/* будет генерироваться скриптом */
+		position:absolute;
+		right:0;
+		bottom:0;
+		display:block;
+		width:433px;
+		height:217px;
+		background:url(../i/foot_back.png) 100% 100% no-repeat;
+		content:'\0020';
+	}
+.page_wrap-out{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
+	margin:auto;
+	padding:0 10px;
+	max-width:1525px;
+	min-width:1000px;
+}
+a{
+	outline:none;
+	color:#39f;
+}
+a:hover {
+	color: #f36;
+}
+img{
+	display:inline;
+}
+map{
+	outline:none;
+}
+/***  HEADER begin  ****************************************************/
+.head{
+	position:relative;
+    z-index: 1;
+    margin-bottom:-130px;
+    padding: 0 0 150px;
+}
+	.logo{
+		overflow:hidden;
+		width:691px;
+		height:99px;
+	}
+		.logo hgroup{
+			padding-top:24px;
+			color:#f36;
+		}
+			.logo h1{
+				display:inline-block;
+				text-indent:40px;
+				letter-spacing:5px;
+				font-weight:100;
+				font-size:7em;
+			}
+				.logo a{
+					color:#f36;
+					text-decoration:none;
+					text-shadow:2px 2px #fff;
+				}
+			.logo h2{ 
+				display:inline-block;
+			    padding:45px 0 0 70px;
+			    font-weight: 100;
+				font-size: 2em;
+			    opacity:0.6;	
+			}
+/* выбор языка***************************/
+.lang{
+	margin-bottom:-35px;
+	padding-right:9%;
+	text-align:right;		
+}
+	.lang li{
+		display:inline;
+		padding-left: 3px;
+		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAALCAAAAACb5bgzAAAADElEQVR42mNIY8ACATBMBGMBPXbdAAAAAElFTkSuQmCC) 0 50% no-repeat;
+		color:#666;
+		font-style:normal;
+		font-size:1.2em;
+		font-family:Arial, sans-serif;
+		line-height:3.4em;
+		zoom:1;
+	}
+		.lang li:first-child{
+			background-image:none;
+		}
+			.lang a{	
+				border-bottom:1px solid #666;
+				color:#666;	
+				text-decoration:none;			
+			}
+/* навигация по сайту**********************/
+
+.menu{
+	margin-left: 280px; 
+}
+.menu ul{
+	white-space:nowrap;
+}
+.menu li{
+	display:inline; 
+}
+	
+	.menu a {
+		position:relative;
+		margin-left:-2%;
+		padding:16px 5.2%;	
+		background:#fff;
+		font-size:1.8em;
+		zoom:1;
+	}
+	.active,
+	.menu a:hover{
+		z-index:1;
+		color:#fff;
+		text-decoration:underline;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-8 */
+	}
+
+/* формы поиска и аутентификации***********/
+form[name*="search"]{
+	position:absolute;
+	top:32px;
+	right:14%;
+	width:220px;
+	color:#666;
+	font-size:1.8em;
+}
+form[name*='search']
+				input[name*='search']{
+			float:right;
+			line-height:1.8;
+		}
+	form[name*='search']
+			input[type='submit']{
+			position:absolute;
+			padding:0;
+			border:none;
+			background:transparent;
+			color:#666;
+			text-transform:lowercase;
+			font:italic 1em/1 Georgia, serif;
+			cursor:pointer;
+		}
+.auth_start {
+	position: absolute;
+	top: 32px;
+	right: 9%;
+	border:none;
+	background:transparent;
+	color: #666;
+	text-decoration:underline;
+	text-transform:lowercase;
+	font-style:italic;
+	font-size: 1.8em;
+	font-family:Georgia, serif;
+}
+
+.auth_fine{
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:0 2px;
+	width:20px;
+}
+.auth_set {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	z-index: 15;
+	display:none;
+	margin-left:-180px;
+	padding: 20px;
+	width: 320px;
+	border-radius: 20px;
+	color: #fff;
+	text-align:center;
+	font-size: 2em;		
+	background-image: url(mhtml:http://elkonina.ru/works/amour/css/amour.ie.css!authset);	/* IE < 8 */
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+.auth_list {
+	text-align: right;
+}
+	.auth_list 
+		label {
+			line-height: 2em;
+		}
+	
+	.auth_list 
+		input {
+			margin-left: 10px;
+			width: 70%;
+		}
+	.auth_list
+		button{
+			margin:0 14px;
+			padding: 2px 5px;
+			width: 40%;
+			text-transform: lowercase;
+			font: italic 0.8em Georgia, serif;
+		}
+	.auth_list 
+		li+li+li {
+			padding-top: 10px;
+			text-align: center;
+		}
+
+			.auth_fine:hover,
+			.auth_start:hover,
+			.auth_list button:hover{
+				color:#f36;
+				cursor: pointer;
+			}
+/***  HEADER end  *******************************************************/
+.main{
+	padding-bottom:65px;
+	max-width:1000px;
+	background: url("../i/decor-contacts.png") 94%  93% no-repeat;
+}
+/* слайд-шоу ******************************/
+.slideshow{
+	position:relative;	
+	float:left;
+	overflow:hidden;
+	margin-right:20px;
+	width:730px;
+	height:342px;
+}
+	.slideshow_tabs{
+		position:absolute;
+		right:25px;
+		bottom:0;
+		z-index:1;
+	}
+		.slideshow_tabs li{
+			display:inline;
+		    padding-left:5px;
+		    height: 40px;
+			border-radius: 9px 9px 0 0;
+			color:#fff;
+			text-align:center; 
+			font-size: 2.4em;
+			cursor:pointer;
+			behavior:url(pie.php);
+		}
+		.slideshow_tabs li:hover{
+			background:#fff;
+			color:#f00;
+		}
+	.slideshow_content{
+		position:relative;
+		left:0;
+		width:100%;
+		height:100%;
+		white-space:nowrap;		
+		-webkit-transition:all 2.0s ease-in-out;
+		-moz-transition:all 2.0s ease-in-out;
+		-o-transition:all 2.0s ease-in-out;	
+		transition:all 2.0s ease-in-out;
+		-ms-transition:all 2.0s ease-in-out;
+	}
+		.slideshow_content li{
+			display:inline;	
+			zoom:1;
+		}
+			figure{
+				position:relative;
+				width:730px;
+				height:342px;
+			}			
+			figcaption{
+				position:absolute;
+				top:36px;
+				left:0;
+				width:730px;
+				height:108px;			
+				background-image: url(mhtml:http://elkonina.ru/works/amour/css/amour.ie.css!figcaption);	/* IE < 8 */
+			}
+				figcaption h2,
+				figcaption p     {
+				    padding: 14px 50% 0 30px;
+				    color: #fff;
+				    white-space:normal;
+				    font-size: 2.4em;
+				}
+				figcaption p {
+				    font-style: normal;
+				    font-size: 1.2em;
+				    font-family: Arial,sans-serif;
+				    line-height: 1.8;
+				}
+			
+		
+/*контакты в центре******************************************************/
+
+.contacts {
+    padding-top: 27px;
+}
+	.contacts h2 {
+	    color: #666;
+	    font-weight: 100;
+	    font-size: 2.4em;
+	}
+	.contacts dt {
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 2;
+	}
+		.contacts dd {
+		    color: #F36;
+		    font-size: 3.6em;
+		    line-height: 1.3;
+		}
+		.contacts dd + dd {
+		    font-size: 3.3em;
+		}
+	.contacts p {
+	    padding-top: 10px;
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 1.8;
+	}
+
+/***  LAYOUT begin  *******************************************************/
+
+section{
+	float:left;
+	margin-right:-1px;
+	width:25%;
+}
+	section h2 {
+	    color: #666;
+	    font-weight: 100;
+	    font-size: 2.4em;
+	}
+	section h3 {
+	    padding-top: 10px;
+	    font-weight: 100;
+	    font-size: 1.6em;
+	    line-height: 1.3;
+	}
+	section p {
+	    padding-right:30px;
+		color: #333;
+	    text-indent:30px;
+	    font-style: normal;
+	    font-size: 1.2em;
+	    font-family: Arial,sans-serif;
+	    line-height: 1.5;
+	}
+.newforms ul{
+	margin-bottom:-60px;
+	padding-top:14px;
+}
+	.newforms li{
+		display:inline;
+		overflow:hidden;
+		margin-right:15px;
+		width:106px;
+		height:144px;
+		color:#333;
+		vertical-align:top;
+		font-size:1.2em;
+		cursor: default;
+		zoom:1;
+	}
+		.newforms a{
+			text-decoration:none;
+			line-height:1.6;
+		}
+			.newforms img{
+				margin-right:-6px;
+				margin-bottom:-1px;
+				width:112px;
+				height:72px;
+			}
+			.newforms span{
+				padding-top:10px;
+				text-decoration:underline;
+			}
+		
+.newphotos li{
+	display:inline;
+	overflow:hidden;
+	margin:13px 15px 6px -1px;
+	width:106px;
+	height:71px;
+	vertical-align:top;
+	zoom:1;
+}
+	.newphotos a{
+		text-decoration:none;
+	}
+		.newphotos img{
+			margin-right:-6px;
+			margin-bottom:-1px;
+			width:112px;
+			height:72px;
+		}
+
+/***  LAYOUT end  *******************************************************/
+
+/***  FOOTER begin  ****************************************************/
+.foot{
+	position:relative;
+	padding:118px 0 0;
+	font-style:normal;
+	font-size:1.2em;
+	font-family:Arial, sans-serif;
+}
+	.column {
+		display:inline;
+		box-sizing:border-box;
+		width:25%;
+		line-height:1.9;
+		zoom:1;
+	}
+		.vcard dl{
+			width:160px;
+			text-align:right;
+		}
+			.vcard dt{
+				float:left;
+			}
+			.tel{
+				white-space:nowrap;
+			}
+		.vcard-before{		/* будет генерироваться скриптом */
+			position:absolute;
+			top:-80px;
+			left:0;
+			display:block;
+			width:230px;
+			height:207px;
+			background:url(../i/decor-foot.png) 0 0 no-repeat;
+			content:"\0020";
+		}
+.interactive a{
+	text-indent:-15px;
+}
+.otherlang{
+	position:relative;
+	left:-10%;
+}
+	select[name="chooselang"]{
+		width:160px;
+	}
+.author{
+	position:absolute;
+	right:120px;
+	bottom:0;
+	text-align:right;
+}
+/***  FOOTER end  *******************************************************/
